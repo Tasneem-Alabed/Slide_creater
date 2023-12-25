@@ -1,0 +1,125 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Slid_App
+build_property.RootNamespace = Slid_App
+build_property.ProjectDir = C:\Users\Tasneem\OneDrive - LTUC\Desktop\project_training\Slid_App\Slid_App\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = C:\Users\Tasneem\OneDrive - LTUC\Desktop\project_training\Slid_App\Slid_App
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Tasneem/OneDrive - LTUC/Desktop/project_training/Slid_App/Slid_App/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tasneem/OneDrive - LTUC/Desktop/project_training/Slid_App/Slid_App/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tasneem/OneDrive - LTUC/Desktop/project_training/Slid_App/Slid_App/Views/Pages/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tasneem/OneDrive - LTUC/Desktop/project_training/Slid_App/Slid_App/Views/Pages/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tasneem/OneDrive - LTUC/Desktop/project_training/Slid_App/Slid_App/Views/Pages/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tasneem/OneDrive - LTUC/Desktop/project_training/Slid_App/Slid_App/Views/Pages/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tasneem/OneDrive - LTUC/Desktop/project_training/Slid_App/Slid_App/Views/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tasneem/OneDrive - LTUC/Desktop/project_training/Slid_App/Slid_App/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tasneem/OneDrive - LTUC/Desktop/project_training/Slid_App/Slid_App/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tasneem/OneDrive - LTUC/Desktop/project_training/Slid_App/Slid_App/Views/Slids/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2xpZHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tasneem/OneDrive - LTUC/Desktop/project_training/Slid_App/Slid_App/Views/Slids/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2xpZHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tasneem/OneDrive - LTUC/Desktop/project_training/Slid_App/Slid_App/Views/Slids/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2xpZHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tasneem/OneDrive - LTUC/Desktop/project_training/Slid_App/Slid_App/Views/Slids/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2xpZHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tasneem/OneDrive - LTUC/Desktop/project_training/Slid_App/Slid_App/Views/Slids/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2xpZHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tasneem/OneDrive - LTUC/Desktop/project_training/Slid_App/Slid_App/Views/UFiles/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVUZpbGVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tasneem/OneDrive - LTUC/Desktop/project_training/Slid_App/Slid_App/Views/UFiles/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVUZpbGVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tasneem/OneDrive - LTUC/Desktop/project_training/Slid_App/Slid_App/Views/UFiles/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVUZpbGVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tasneem/OneDrive - LTUC/Desktop/project_training/Slid_App/Slid_App/Views/UFiles/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVUZpbGVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tasneem/OneDrive - LTUC/Desktop/project_training/Slid_App/Slid_App/Views/UFiles/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVUZpbGVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tasneem/OneDrive - LTUC/Desktop/project_training/Slid_App/Slid_App/Views/Users/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tasneem/OneDrive - LTUC/Desktop/project_training/Slid_App/Slid_App/Views/Users/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tasneem/OneDrive - LTUC/Desktop/project_training/Slid_App/Slid_App/Views/Users/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tasneem/OneDrive - LTUC/Desktop/project_training/Slid_App/Slid_App/Views/Users/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tasneem/OneDrive - LTUC/Desktop/project_training/Slid_App/Slid_App/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tasneem/OneDrive - LTUC/Desktop/project_training/Slid_App/Slid_App/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tasneem/OneDrive - LTUC/Desktop/project_training/Slid_App/Slid_App/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tasneem/OneDrive - LTUC/Desktop/project_training/Slid_App/Slid_App/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-q7j8ir5y5k

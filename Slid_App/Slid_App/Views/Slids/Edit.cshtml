@@ -1,0 +1,44 @@
+﻿@model Slid_App.Models.Slid
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Slid</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="SlidId" class="control-label"></label>
+                <input asp-for="SlidId" class="form-control" />
+                <span asp-validation-for="SlidId" class="text-danger"></span>
+            </div>
+            <input type="hidden" asp-for="UserId" />
+            <div class="form-group">
+                <label asp-for="SlidName" class="control-label"></label>
+                <input asp-for="SlidName" class="form-control" />
+                <span asp-validation-for="SlidName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SlidUrl" class="control-label"></label>
+                <input asp-for="SlidUrl" class="form-control" />
+                <span asp-validation-for="SlidUrl" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
