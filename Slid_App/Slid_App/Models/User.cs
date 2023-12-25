@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
-
+using Microsoft.AspNetCore.Identity;
 namespace Slid_App.Models
 {
-    public class User
+    public class User :IdentityUser
     {
         [Required]
         public int UserId { get; set; }

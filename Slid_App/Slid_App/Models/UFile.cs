@@ -8,7 +8,7 @@ namespace Slid_App.Models
         [Required]
         public int Id { get; set; }
 
-        [ForeignKey("UserId")]
+      
         public User User { get; set; }
 
         public int UserId { get; set; }

@@ -7,12 +7,13 @@ using Microsoft.Identity.Client;
 
 
 
+
 namespace Slid_App.Models
 {
     public class SlideAppDbContext : DbContext
     {
 
-        public SlideAppDbContext(DbContextOptions option) : base(option)
+        public SlideAppDbContext(DbContextOptions<SlideAppDbContext> option) : base(option)
         {
            
         }
@@ -23,6 +24,18 @@ namespace Slid_App.Models
             {
 
             base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Page>().HasKey(
+            Page => new { Page.SlidId }
+            );
+            modelBuilder.Entity<Slid>().HasKey(
+               slid => new { slid.UserId }
+               );
+            modelBuilder.Entity<UFile>().HasKey(
+              UFile => new { UFile.UserId }
+              );
+            modelBuilder.Entity<Page>()
+             .HasKey(page => page.Id);
 
             modelBuilder.Entity<User>().HasData(
                 new User
@@ -65,15 +78,7 @@ namespace Slid_App.Models
                     VideoUrl = "https://example.com/sample.mp4"  // Replace with actual URL
                 });
 
-            modelBuilder.Entity<Page>().HasKey(
-             Page => new { Page.SlidId }
-             );
-            modelBuilder.Entity<Slid>().HasKey(
-               slid => new { slid.UserId }
-               );
-            modelBuilder.Entity<UFile>().HasKey(
-              UFile => new { UFile.UserId }
-              );
+           
         }
         public DbSet<User> Users { get; set; }
         public DbSet<Slid> Slids { get; set; }

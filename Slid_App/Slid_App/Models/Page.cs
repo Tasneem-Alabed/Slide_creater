@@ -7,7 +7,7 @@ namespace Slid_App.Models
     {
         public int Id { get; set; }
 
-        [ForeignKey("SlidId")]
+       
         public Slid Slids { get; set; }
 
         public int SlidId { get; set; }

@@ -14,7 +14,7 @@ namespace Slid_App
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
+            
 
             string? connString = builder.Configuration.GetConnectionString("DefaultConnection");
 
@@ -25,6 +25,7 @@ namespace Slid_App
             builder.Services.AddTransient<IPage, PageServices>();
             builder.Services.AddTransient<IUFile, UFileServices>();
 
+            builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

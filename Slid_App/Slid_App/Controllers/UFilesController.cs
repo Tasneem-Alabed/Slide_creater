@@ -11,9 +11,9 @@ namespace Slid_App.Controllers
 {
     public class UFilesController : Controller
     {
-        private readonly YourDbContext _context;
+        private readonly SlideAppDbContext _context;
 
-        public UFilesController(YourDbContext context)
+        public UFilesController(SlideAppDbContext context)
         {
             _context = context;
         }

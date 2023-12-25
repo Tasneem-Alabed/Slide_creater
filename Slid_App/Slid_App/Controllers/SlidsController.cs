@@ -11,9 +11,9 @@ namespace Slid_App.Controllers
 {
     public class SlidsController : Controller
     {
-        private readonly YourDbContext _context;
+        private readonly SlideAppDbContext _context;
 
-        public SlidsController(YourDbContext context)
+        public SlidsController(SlideAppDbContext context)
         {
             _context = context;
         }
