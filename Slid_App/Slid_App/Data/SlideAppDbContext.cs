@@ -1,6 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
+using Microsoft.Identity.Client;
+
 
 
 
@@ -11,14 +14,15 @@ namespace Slid_App.Models
 
         public SlideAppDbContext(DbContextOptions option) : base(option)
         {
-
+           
         }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         
             {
 
-           // base.OnModelCreating(modelBuilder);
+            base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<User>().HasData(
                 new User

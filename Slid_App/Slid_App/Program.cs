@@ -1,5 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using Slid_App.Models;
+using Microsoft.SqlServer;
+using Microsoft.EntityFrameworkCore.Metadata;
+using Slid_App.Models.Interfse;
+using Slid_App.Models.Servicse;
 
 namespace Slid_App
 {
@@ -14,11 +18,13 @@ namespace Slid_App
 
             string? connString = builder.Configuration.GetConnectionString("DefaultConnection");
 
-            builder.Services
-                .AddDbContext<SlideAppDbContext>
-                (options => options.UseSqlServer(connString));
+            builder.Services.AddDbContext<SlideAppDbContext>(options => options.UseSqlServer(connString));
+            builder.Services.AddControllers();
+            builder.Services.AddTransient<IUser, UserServices>();
+            builder.Services.AddTransient<ISlid, SlidServices>();
+            builder.Services.AddTransient<IPage, PageServices>();
+            builder.Services.AddTransient<IUFile, UFileServices>();
 
-           
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
