@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Slid_App.Models.DTO;
 
 using System.Security.Claims;
 
@@ -7,15 +8,15 @@ namespace Slid_App.Models.Interfse
 {
     public interface IUser
     {
-     Task <User> GetUserById(int id);
+     Task <UserDTO> GetUserById(int id);
 
-     Task <User> UpdateUser(int id ,User user);
+     Task <UserDTO> UpdateUser(int id ,UserDTO user);
 
-     Task <User> CreateUser(User user);
+     Task <UserDTO> CreateUser(UserDTO user);
 
-     Task <User> AddSlid(int UserID,Slid slid);
+     Task <UserDTO> AddSlid(int UserID,SlidDTO slid);
 
-     Task<User> AddFile(int UserId, UFile uFile);
+     Task<UserDTO> AddFile(int UserId, UFileDTO uFile);
 
 
     }

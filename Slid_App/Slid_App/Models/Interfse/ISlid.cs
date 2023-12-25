@@ -1,17 +1,19 @@
-﻿namespace Slid_App.Models.Interfse
+﻿using Slid_App.Models.DTO;
+
+namespace Slid_App.Models.Interfse
 {
     public interface ISlid
     {
-        Task<List<Slid>> GetSlids();
+        Task<List<SlidDTO>> GetSlids();
 
-        Task<Slid> GetSlid(int id);
+        Task<SlidDTO> GetSlid(int id);
 
-        Task<Slid> DeleteSlidById(int id);
+        Task<SlidDTO> DeleteSlidById(int id);
 
-        Task<Slid> UpdateSlid(int id ,Slid slid);
+        Task<SlidDTO> UpdateSlid(int id , SlidDTO slid);
 
-        Task<Slid> CreatePage(int SlidId, Page page);
+        Task<SlidDTO> CreatePage(int SlidId, PageDTO page);
 
-        Task<Slid> DeletePage(int PageId);
+        Task<SlidDTO> DeletePage(int PageId);
     }
 }

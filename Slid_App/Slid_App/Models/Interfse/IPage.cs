@@ -1,7 +1,9 @@
-﻿namespace Slid_App.Models.Interfse
+﻿using Slid_App.Models.DTO;
+
+namespace Slid_App.Models.Interfse
 {
     public interface IPage
     {
-        Task<Page> UpdatePage(int id ,Page page);
+        Task<PageDTO> UpdatePage(int id ,PageDTO page);
     }
 }

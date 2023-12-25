@@ -1,11 +1,13 @@
-﻿namespace Slid_App.Models.Interfse
+﻿using Slid_App.Models.DTO;
+
+namespace Slid_App.Models.Interfse
 {
     public interface IUFile
     {
-        Task <UFile> GetUFile();
+        Task <UFileDTO> GetUFile();
 
-        Task <UFile> GitFileByName(string name);
+        Task <UFileDTO> GitFileByName(string name);
 
-        Task<UFile> DeleteFile(int id);
+        Task<UFileDTO> DeleteFile(int id);
     }
 }

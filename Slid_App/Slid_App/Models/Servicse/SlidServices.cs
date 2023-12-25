@@ -1,35 +1,43 @@
-﻿using Slid_App.Models.Interfse;
-
+﻿using Slid_App.Models.DTO;
+using Slid_App.Models.Interfse;
+using Microsoft.EntityFrameworkCore;
 namespace Slid_App.Models.Servicse
 {
     public class SlidServices : ISlid
     {
-        public Task<Slid> CreatePage(int SlidId, Page page)
+        private readonly SlideAppDbContext _context;
+
+        public SlidServices(SlideAppDbContext context)
+        {
+            _context = context;
+        }
+
+        public Task<SlidDTO> CreatePage(int SlidId, PageDTO page)
         {
             throw new NotImplementedException();
         }
 
-        public Task<Slid> DeletePage(int PageId)
+        public Task<SlidDTO> DeletePage(int PageId)
         {
             throw new NotImplementedException();
         }
 
-        public Task<Slid> DeleteSlidById(int id)
+        public Task<SlidDTO> DeleteSlidById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Task<Slid> GetSlid(int id)
+        public Task<SlidDTO> GetSlid(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Task<List<Slid>> GetSlids()
+        public Task<List<SlidDTO>> GetSlids()
         {
             throw new NotImplementedException();
         }
 
-        public Task<Slid> UpdateSlid(int id, Slid slid)
+        public Task<SlidDTO> UpdateSlid(int id, SlidDTO slid)
         {
             throw new NotImplementedException();
         }
