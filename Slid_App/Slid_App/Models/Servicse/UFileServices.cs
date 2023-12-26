@@ -18,7 +18,7 @@ namespace Slid_App.Models.Servicse
         /// <param name="FileU">Data for the new UFile.</param>
         public async Task<UFileDTO> CreateUFile(UFileDTO FileU)
         {
-            var Ufile = await _context.Users.FindAsync(FileU.UserId);
+            //var Ufile = await _context.Users.FindAsync(FileU.UserId);
             
             UFile Fileu = new UFile()
             {
@@ -80,6 +80,10 @@ namespace Slid_App.Models.Servicse
         
     }
 
+        /// <summary>
+        /// Git List Of UFile by User ID.
+        /// </summary>
+        /// <param name="id">ID of the User.</param>
         public async Task<List<UFileDTO>> GetUFile(int id)
         {
           
@@ -87,7 +91,7 @@ namespace Slid_App.Models.Servicse
                     .Where(file => file.UserId == id)
                     .ToListAsync();
 
-                // Convert UFiles to UFileDTOs
+               
                 List<UFileDTO> uFileDTOs = uFiles.Select(file => new UFileDTO
                 {
                     UserId = file.UserId,
@@ -99,11 +103,14 @@ namespace Slid_App.Models.Servicse
                 return uFileDTOs;
             }
 
-        
 
+        /// <summary>
+        /// Get a UFile by its Name.
+        /// </summary>
+        /// <param name="name">name of the UFile.</param>
         public async Task<UFileDTO> GitFileByName(string name)
         {
-            var FileU = await _context.Users
+            var FileU = await _context.UFiles
             .Where(u => u.Name == name)
                .FirstOrDefaultAsync();
 
@@ -117,7 +124,10 @@ namespace Slid_App.Models.Servicse
                
                 Name = FileU.Name,
                 UserId = FileU.UserId,
-               
+                ImageUrl = FileU.ImageUrl,
+                VideoUrl = FileU.VideoUrl
+
+
 
             };
 

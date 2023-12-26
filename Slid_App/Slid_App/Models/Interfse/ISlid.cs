@@ -4,7 +4,7 @@ namespace Slid_App.Models.Interfse
 {
     public interface ISlid
     {
-        Task<List<SlidDTO>> GetSlids();
+        Task<List<SlidDTO>> GetSlids(int id);
 
         Task<SlidDTO> GetSlid(int id);
 
