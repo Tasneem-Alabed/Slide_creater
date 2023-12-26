@@ -12,20 +12,116 @@ namespace Slid_App.Models.Servicse
         {
             _context = context;
         }
-
-        public Task<UFileDTO> DeleteFile(int id)
+        /// <summary>
+        /// Create a new UFile.
+        /// </summary>
+        /// <param name="FileU">Data for the new UFile.</param>
+        public async Task<UFileDTO> CreateUFile(UFileDTO FileU)
         {
-            throw new NotImplementedException();
+            var Ufile = await _context.Users.FindAsync(FileU.UserId);
+            
+            UFile Fileu = new UFile()
+            {
+               UserId = FileU.UserId,
+               Name = FileU.Name,
+               ImageUrl = FileU.ImageUrl,
+               VideoUrl = FileU.VideoUrl
+            };
+
+            _context.Entry(Fileu).State = EntityState.Added;
+            await _context.SaveChangesAsync();
+
+            UFileDTO createdUFileDTO = new UFileDTO
+            {
+                UserId = Fileu.UserId,
+                Name = Fileu.Name,
+                ImageUrl = Fileu.ImageUrl,
+                VideoUrl = Fileu.VideoUrl
+            };
+
+            return createdUFileDTO;
         }
 
-        public Task<UFileDTO> GetUFile()
+        /// <summary>
+        /// Delete a UFile by its ID.
+        /// </summary>
+        /// <param name="id">ID of the UFile.</param>
+        public async Task<UFileDTO> DeleteFile(int id)
         {
-            throw new NotImplementedException();
-        }
+            var Ufile = await _context.UFiles.FindAsync(id);
 
-        public Task<UFileDTO> GitFileByName(string name)
+            if (Ufile != null)
+            {
+                UFile returnFile = new UFile()
+                {
+                    UserId = Ufile.UserId,
+                    Name = Ufile.Name,
+                    ImageUrl = Ufile.ImageUrl,
+                    VideoUrl = Ufile.VideoUrl
+                };
+
+                _context.Entry(Ufile).State = EntityState.Deleted;
+
+                await _context.SaveChangesAsync();
+
+               
+                UFileDTO returnFileDTO = new UFileDTO
+                {
+                    UserId = returnFile.UserId,
+                    Name = returnFile.Name,
+                    ImageUrl = returnFile.ImageUrl,
+                    VideoUrl = returnFile.VideoUrl
+                };
+
+                return returnFileDTO;
+            }
+
+            return null;
+        
+    }
+
+        public async Task<List<UFileDTO>> GetUFile(int id)
         {
-            throw new NotImplementedException();
+          
+                var uFiles = await _context.UFiles
+                    .Where(file => file.UserId == id)
+                    .ToListAsync();
+
+                // Convert UFiles to UFileDTOs
+                List<UFileDTO> uFileDTOs = uFiles.Select(file => new UFileDTO
+                {
+                    UserId = file.UserId,
+                    Name = file.Name,
+                   ImageUrl = file.ImageUrl,
+                   VideoUrl = file.VideoUrl
+                }).ToList();
+
+                return uFileDTOs;
+            }
+
+        
+
+        public async Task<UFileDTO> GitFileByName(string name)
+        {
+            var FileU = await _context.Users
+            .Where(u => u.Name == name)
+               .FirstOrDefaultAsync();
+
+            if (FileU == null)
+            {
+
+                return null;
+            }
+            var fileDto = new UFileDTO
+            {
+               
+                Name = FileU.Name,
+                UserId = FileU.UserId,
+               
+
+            };
+
+            return fileDto;
         }
     }
 }

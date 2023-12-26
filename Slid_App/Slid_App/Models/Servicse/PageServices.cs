@@ -13,6 +13,21 @@ namespace Slid_App.Models.Servicse
             _context = context;
         }
 
+        public Task<PageDTO> Create(PageDTO page)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<PageDTO> Delete(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<PageDTO> Get(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public Task<PageDTO> UpdatePage(int id, PageDTO page)
         {
             throw new NotImplementedException();

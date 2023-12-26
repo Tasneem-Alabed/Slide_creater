@@ -1,6 +1,7 @@
 ﻿using Slid_App.Models.DTO;
 using Slid_App.Models.Interfse;
 using Microsoft.EntityFrameworkCore;
+
 namespace Slid_App.Models.Servicse
 {
     public class SlidServices : ISlid
@@ -12,12 +13,7 @@ namespace Slid_App.Models.Servicse
             _context = context;
         }
 
-        public Task<SlidDTO> CreatePage(int SlidId, PageDTO page)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<SlidDTO> DeletePage(int PageId)
+        public Task<SlidDTO> CreateSlid(SlidDTO Slids)
         {
             throw new NotImplementedException();
         }

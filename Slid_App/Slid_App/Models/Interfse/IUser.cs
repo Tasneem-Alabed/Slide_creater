@@ -14,9 +14,7 @@ namespace Slid_App.Models.Interfse
 
      Task <UserDTO> CreateUser(UserDTO user);
 
-     Task <UserDTO> AddSlid(int UserID,SlidDTO slid);
-
-     Task<UserDTO> AddFile(int UserId, UFileDTO uFile);
+    
 
 
     }

@@ -12,8 +12,8 @@ namespace Slid_App.Models.Interfse
 
         Task<SlidDTO> UpdateSlid(int id , SlidDTO slid);
 
-        Task<SlidDTO> CreatePage(int SlidId, PageDTO page);
+        Task<SlidDTO> CreateSlid(SlidDTO Slids);
 
-        Task<SlidDTO> DeletePage(int PageId);
+     
     }
 }

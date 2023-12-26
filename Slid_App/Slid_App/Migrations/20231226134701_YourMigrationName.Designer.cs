@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Slid_App.Models;
 
@@ -11,9 +12,11 @@ using Slid_App.Models;
 namespace Slid_App.Migrations
 {
     [DbContext(typeof(SlideAppDbContext))]
-    partial class SlideAppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231226134701_YourMigrationName")]
+    partial class YourMigrationName
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

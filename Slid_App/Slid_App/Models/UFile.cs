@@ -15,6 +15,7 @@ namespace Slid_App.Models
 
         public string Name { get; set; }
 
+
         [DataType(DataType.Url)]
         public string? ImageUrl { get; set; }
 
