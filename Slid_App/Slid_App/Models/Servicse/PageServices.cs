@@ -74,14 +74,50 @@ namespace Slid_App.Models.Servicse
             return null;
         }
 
-        public Task<PageDTO> Get(int id)
+        /// <summary>
+        /// Get a page by its ID.
+        /// </summary>
+        /// <param name="id">ID of the page.</param>
+        public async Task<PageDTO> Get(int id)
         {
-            throw new NotImplementedException();
+            var page = await _context.Pages
+             .Where(u => u.Id == id)
+                .FirstOrDefaultAsync();
+
+            if (page == null)
+            {
+
+                return null;
+            }
+            var pagedto = new PageDTO
+            {
+
+              SlidId= page.SlidId,
+              Text= page.Text,
+              ImageBase64= page.ImageBase64,
+              VideoUrl = page.VideoUrl
+
+            };
+
+            return pagedto;
+
         }
 
-        public Task<PageDTO> UpdatePage(int id, PageDTO page)
+        public async Task<PageDTO> UpdatePage(int id, PageDTO page)
         {
-            throw new NotImplementedException();
+            var update_page = await _context.Pages.FindAsync(id);
+
+            if (update_page != null)
+            {
+                update_page.Text = page.Text;
+                update_page.VideoUrl = page.VideoUrl;
+              
+                update_page.ImageBase64 = page.ImageBase64;
+                  await _context.SaveChangesAsync();
+            }
+            page.Id = id;
+            var page1 = await Get(page.Id);
+            return page1;
         }
     }
 }
